@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Result</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #f7971e, #ffd200);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #f7971e;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    a:hover {
+      background-color: #e08600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>{{ message }}</h2>
+    <p>{{ detail }}</p>
+    <a href="/reset">Play Again</a>
+  </div>
+</body>
+</html>
